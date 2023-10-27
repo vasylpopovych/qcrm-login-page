@@ -1,3 +1,24 @@
 .container {
-  color: aquamarine;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: background-image 1.9s ease;
+  transition: background-image 1.9s ease;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-container {
+  background-color: #eff5f1;
+  height: 400px;
+  width: 350px;
+  opacity: 0.9;
 }

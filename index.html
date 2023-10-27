@@ -10,7 +10,28 @@
 </head>
 
 <body>
-    <p class="container">hello world</p>
+    <div class="container">
+        <form action="index.html">
+            <div class="logo-container">
+                logo
+            </div>
+            <div class="form-container">
+                <div class="title-container">
+                    <p class="first-title">QCRM</p>
+                    <p class="second-title">by SupportYourApp</p>
+                </div>
+                <input type="text" placeholder="Login" name="login" required>
+                <input type="text" placeholder="Password" name="password" required>
+                <div class="checkbox-container">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me on this computer
+                    </label>
+                </div>
+                <button type="submit">Sign in to QCRM</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
