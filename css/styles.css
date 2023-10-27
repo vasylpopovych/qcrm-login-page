@@ -1,9 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
 .container {
   background-position: center;
   background-size: cover;
   -webkit-transition: background-image 3s ease;
   transition: background-image 3s ease;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +23,8 @@
 
 .form-container {
   background-color: #eff5f1;
-  height: 400px;
-  width: 350px;
+  max-width: 360px;
+  height: 420px;
   opacity: 0.9;
+  margin: 30px;
 }
