@@ -19,25 +19,22 @@ const images = [
 
 const container = document.querySelector(".container");
 
-let rotationInterval;
-
-function changeBackgroundImage() {
+const changeBackgroundImage = () => {
     const randomIndex = Math.floor(Math.random() * images.length);
     container.style.backgroundImage = `url(${images[randomIndex]})`;
     sessionStorage.setItem("lastDisplayedImage", images[randomIndex]);
-    console.log(images[randomIndex]);
-}
-
-function stopRotation() {
-    clearInterval(rotationInterval);
-}
+};
 
 const lastDisplayedImage = sessionStorage.getItem("lastDisplayedImage");
 
 if (lastDisplayedImage) {
     container.style.backgroundImage = `url(${lastDisplayedImage})`;
+} else {
+    changeBackgroundImage();
 }
 
-rotationInterval = setInterval(changeBackgroundImage, 10000);
+const rotationInterval = setInterval(changeBackgroundImage, 10000);
 
-setTimeout(stopRotation, 60000);
+setTimeout(() => {
+    clearInterval(rotationInterval);
+}, 60000);
