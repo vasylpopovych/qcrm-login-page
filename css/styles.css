@@ -6,10 +6,10 @@ body {
 .container {
   background-position: center;
   background-size: cover;
-  -webkit-transition: background-image 3s ease;
-  transition: background-image 3s ease;
-  height: 100%;
+  -webkit-transition: background-image 3s;
+  transition: background-image 3s;
   width: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,10 +21,66 @@ body {
           justify-content: center;
 }
 
+.logo-container {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  z-index: 10;
+  margin: 0px 0px 0px -50px;
+  opacity: 0.9;
+}
+
 .form-container {
   background-color: #eff5f1;
   max-width: 360px;
   height: 420px;
-  opacity: 0.9;
-  margin: 30px;
+  opacity: 1;
+  margin: 200px 50px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 1px 14px 28px 14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 14px 28px 14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 14px 28px 14px rgba(0, 0, 0, 0.75);
+  -webkit-animation: form 1s ease;
+          animation: form 1s ease;
+}
+
+@-webkit-keyframes form {
+  0% {
+    -webkit-transform: perspective(2500px) rotateX(-60deg);
+            transform: perspective(2500px) rotateX(-60deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes form {
+  0% {
+    -webkit-transform: perspective(2500px) rotateX(-60deg);
+            transform: perspective(2500px) rotateX(-60deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 50%;
+    margin: 0px 0px 0px -40px;
+  }
 }
