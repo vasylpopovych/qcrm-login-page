@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 html,
 body {
   height: 100%;
 }
 
 .container {
+  font-family: "Raleway", sans-serif;
   background-position: center;
   background-size: cover;
   -webkit-transition: background-image 3s;
@@ -90,6 +92,23 @@ body {
   -moz-box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
   -webkit-animation: form 1s ease-in;
           animation: form 1s ease-in;
+}
+
+.title-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title-container h1 {
+  font-size: 40px;
+}
+
+.title-container .second-title {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #abafac;
 }
 
 @-webkit-keyframes form {
