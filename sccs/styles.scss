@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import "variables.scss";
 
 html,
 body {
@@ -58,23 +59,23 @@ form {
         align-self: center;
     }
     .orange {
-        background-color: #f8911d;
+        background-color: $--color-orange;
         top: 4px;
         left: 29px;
     }
     .violet {
-        background-color: #d1369c;
+        background-color: $--color-violet;
         top: 18px;
         right: 7px;
         z-index: 2;
     }
     .blue {
-        background-color: #3e9ffd;
+        background-color: $--color-blue;
         top: -18px;
         left: 29px;
     }
     .green {
-        background-color: #4ebf49;
+        background-color: $--color-green;
         top: -4px;
         right: 7px;
         z-index: 2;
@@ -110,8 +111,8 @@ input[type="password"] {
     font-size: 16px;
     border: 1px solid #767877;
     &:focus {
-        border-color: #3e9ffd;
-        outline: 1px solid #3e9ffd;
+        border-color: $--color-blue;
+        outline: 1px solid $--color-blue;
     }
 }
 
@@ -134,7 +135,7 @@ input[type="checkbox"] {
     margin-top: 42px;
     width: 100%;
     height: 40px;
-    background-color: #3e9ffd;
+    background-color: $--color-blue;
     color: #ffffff;
     border: none;
     cursor: pointer;
