@@ -128,7 +128,7 @@ form {
   margin-top: 36px;
 }
 
-input[type="email"],
+input[type="text"],
 input[type="password"] {
   height: 40px;
   margin-bottom: 18px;
@@ -137,7 +137,7 @@ input[type="password"] {
   border: 1px solid #767877;
 }
 
-input[type="email"]:focus,
+input[type="text"]:focus,
 input[type="password"]:focus {
   border-color: #3e9ffd;
   outline: 1px solid #3e9ffd;
@@ -157,6 +157,21 @@ input[type="password"]:focus {
 
 ::placeholder {
   color: #d6d6d6;
+}
+
+input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+  margin: 4px 7px 0px 0px;
+}
+
+.label-span {
+  color: #636363;
+  font-size: 13px;
+}
+
+.submit-button {
+  margin-top: 40px;
 }
 
 @-webkit-keyframes form {
