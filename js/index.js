@@ -1,11 +1,11 @@
-import { images } from "./images.js";
+import { imagePaths } from "./images.js";
 
 const container = document.querySelector(".container");
 
 const changeBackgroundImage = () => {
-    const randomIndex = Math.floor(Math.random() * images.length);
-    container.style.backgroundImage = `url(${images[randomIndex]})`;
-    sessionStorage.setItem("lastDisplayedImage", images[randomIndex]);
+    const randomIndex = Math.floor(Math.random() * imagePaths.length);
+    container.style.backgroundImage = `url(${imagePaths[randomIndex]})`;
+    sessionStorage.setItem("lastDisplayedImage", imagePaths[randomIndex]);
 };
 
 const lastDisplayedImage = sessionStorage.getItem("lastDisplayedImage");
