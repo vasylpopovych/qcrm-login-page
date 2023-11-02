@@ -171,8 +171,8 @@ form {
   box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
-  -webkit-animation: form 0.8s ease-in;
-          animation: form 0.8s ease-in;
+  -webkit-animation: form 1s ease-in;
+          animation: form 1s ease-in;
 }
 
 .logo-container {
@@ -323,7 +323,14 @@ input[type="checkbox"] {
             transform: perspective(2500px) rotateX(-60deg);
     -webkit-transform-origin: top;
             transform-origin: top;
-    opacity: 0.6;
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: rotateX(0deg);
@@ -337,7 +344,14 @@ input[type="checkbox"] {
             transform: perspective(2500px) rotateX(-60deg);
     -webkit-transform-origin: top;
             transform-origin: top;
-    opacity: 0.6;
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: rotateX(0deg);
