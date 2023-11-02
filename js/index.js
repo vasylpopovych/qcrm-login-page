@@ -10,14 +10,16 @@ const changeBackgroundImage = () => {
 
 const lastDisplayedImage = sessionStorage.getItem("lastDisplayedImage");
 
-if (lastDisplayedImage) {
-    container.style.backgroundImage = `url(${lastDisplayedImage})`;
-} else {
-    changeBackgroundImage();
-}
-
-const rotationInterval = setInterval(changeBackgroundImage, 10000);
-
 setTimeout(() => {
-    clearInterval(rotationInterval);
-}, 60000);
+    if (lastDisplayedImage) {
+        container.style.backgroundImage = `url(${lastDisplayedImage})`;
+    } else {
+        changeBackgroundImage();
+    }
+
+    const rotationInterval = setInterval(changeBackgroundImage, 10000);
+
+    setTimeout(() => {
+        clearInterval(rotationInterval);
+    }, 60000);
+}, 2500);
