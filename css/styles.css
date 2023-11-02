@@ -139,7 +139,7 @@ body {
   font-family: "Raleway", sans-serif;
   background-position: center;
   background-size: cover;
-  background: #d6d6d6;
+  background-image: url("../images/default-color-background.jpeg");
   -webkit-transition: background-image 3s ease-out;
   transition: background-image 3s ease-out;
   width: 100%;
@@ -171,8 +171,8 @@ form {
   box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.75);
-  -webkit-animation: form 1s ease-in;
-          animation: form 1s ease-in;
+  -webkit-animation: form 0.8s ease-in;
+          animation: form 0.8s ease-in;
 }
 
 .logo-container {
@@ -191,8 +191,8 @@ form {
   z-index: 10;
   margin: 0px 0px 0px -50px;
   opacity: 0.9;
-  -webkit-animation: logo 2s ease-out;
-          animation: logo 2s ease-out;
+  -webkit-animation: logo 1.5s ease-out;
+          animation: logo 1.5s ease-out;
 }
 
 .logo-container .logo-part {

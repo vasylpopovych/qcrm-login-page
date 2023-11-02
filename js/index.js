@@ -22,4 +22,4 @@ setTimeout(() => {
     setTimeout(() => {
         clearInterval(rotationInterval);
     }, 60000);
-}, 2500);
+}, 2000);
