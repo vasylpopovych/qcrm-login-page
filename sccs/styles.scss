@@ -51,6 +51,7 @@ form {
     z-index: 10;
     margin: 0px 0px 0px -50px;
     opacity: 0.9;
+    transform: perspective(500px);
     animation: logo 1.5s ease-out;
     .logo-part {
         position: relative;
@@ -64,23 +65,27 @@ form {
         background-color: $--color-orange;
         top: 4px;
         left: 29px;
+        animation: logo-part-orange 0.8s ease-out;
     }
     .violet {
         background-color: $--color-violet;
         top: 18px;
         right: 7px;
         z-index: 2;
+        animation: logo-part-violet 0.8s ease-out;
     }
     .blue {
         background-color: $--color-blue;
         top: -18px;
         left: 29px;
+        animation: logo-part-blue 0.7s ease-out;
     }
     .green {
         background-color: $--color-green;
         top: -4px;
         right: 7px;
         z-index: 2;
+        animation: logo-part-green 0.9s ease-out;
     }
 }
 
@@ -165,13 +170,70 @@ input[type="checkbox"] {
 
 @keyframes logo {
     0% {
-        transform: perspective(2500px) rotateX(90deg);
+        transform: perspective(2000px) rotateX(90deg);
         transform-origin: top;
         opacity: 1;
     }
     100% {
         transform: rotateX(0deg);
         opacity: 1;
+    }
+}
+
+@keyframes logo-part-orange {
+    0% {
+        transform: perspective(100px) rotateX(70deg);
+        top: -150px;
+        left: 5px;
+        opacity: 0;
+        width: 68px;
+        height: 68px;
+    }
+    100% {
+        transform: rotateX(40deg);
+    }
+}
+
+@keyframes logo-part-violet {
+    0% {
+        transform: perspective(100px) rotateX(70deg);
+        top: -100px;
+        opacity: 0;
+        width: 68px;
+        height: 68px;
+    }
+    100% {
+        transform: rotateX(40deg);
+        opacity: 0.9;
+    }
+}
+
+@keyframes logo-part-blue {
+    0% {
+        transform: perspective(100px) rotateX(70deg);
+        top: -50px;
+        opacity: 0;
+        left: 15px;
+        width: 68px;
+        height: 68px;
+    }
+    100% {
+        transform: rotateX(60deg);
+        opacity: 0.9;
+    }
+}
+
+@keyframes logo-part-green {
+    0% {
+        transform: perspective(100px) rotateX(70deg);
+        top: -200px;
+        opacity: 0;
+        width: 68px;
+        height: 68px;
+    }
+    100% {
+        transform: rotateX(60deg);
+        opacity: 0.9;
     }
 }
 
