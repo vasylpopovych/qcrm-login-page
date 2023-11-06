@@ -140,8 +140,10 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("../images/default-color-background.jpeg");
-  -webkit-transition: background-image 3s ease-out;
-  transition: background-image 3s ease-out;
+  transition: background-image 2.5s ease-out;
+  -webkit-transition: background-image 2.5s ease-out;
+  -moz-transition: background-image 2.5s ease-out;
+  -o-transition: background-image 2.5s ease-out;
   width: 100%;
   min-height: 100%;
   display: -webkit-box;
