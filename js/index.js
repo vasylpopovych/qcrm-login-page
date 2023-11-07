@@ -35,5 +35,5 @@ preloadImages(imagePaths, () => {
         setTimeout(() => {
             clearInterval(rotationInterval);
         }, 60000);
-    }, 2000);
+    }, 1700);
 });
