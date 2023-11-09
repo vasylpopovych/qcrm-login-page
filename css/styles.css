@@ -195,8 +195,8 @@ form {
   opacity: 0.9;
   -webkit-transform: perspective(500px);
           transform: perspective(500px);
-  -webkit-animation: logo 1.5s ease-out;
-          animation: logo 1.5s ease-out;
+  -webkit-animation: logo 1.2s ease-out;
+          animation: logo 1.2s ease-out;
 }
 
 .logo-container .logo-part {
